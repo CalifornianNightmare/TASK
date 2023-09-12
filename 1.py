@@ -2,6 +2,8 @@ import pymysql
 from config import host, username, password, db_name
 
 
+sp = []
+
 try:
     con = pymysql.connect(
         host=host,
@@ -15,12 +17,20 @@ try:
     print('\n')
 
     a, b = int(input()), int(input())
-    val = a+b
+    sp.append(a+b)
+    sp.append(a-b)
+    sp.append(a*b)
+    sp.append(a/b)
+    sp.append(a//b)
+    sp.append(a%b)
+    sp.append(a**b)
+    sp.append((a**b) % 3)
 
     try:
         with con.cursor() as cur:
             sel = "INSERT INTO TABLE1 (comb) VALUES (%s);"
-            cur.execute(sel, val)
+            for val in sp:
+                cur.execute(sel, val)
             con.commit()
             print('Lypa')
     finally:
