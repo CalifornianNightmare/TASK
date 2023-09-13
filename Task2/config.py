@@ -1,0 +1,5 @@
+host = 'localhost'
+username = 'root'
+password = 'NeforMAL_768'
+db_name = 'testdb13'
+excel_filename = 'test.xlsx'
