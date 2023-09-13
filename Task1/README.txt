@@ -10,21 +10,21 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
 
 -- -----------------------------------------------------
--- Schema TESTDB13
+-- Schema TESTDB12
 -- -----------------------------------------------------
 
 -- -----------------------------------------------------
--- Schema TESTDB13
+-- Schema TESTDB12
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `TESTDB13` DEFAULT CHARACTER SET utf8 ;
-USE `TESTDB13` ;
+CREATE SCHEMA IF NOT EXISTS `TESTDB12` DEFAULT CHARACTER SET utf8 ;
+USE `TESTDB12` ;
 
 -- -----------------------------------------------------
--- Table `TESTDB13`.`table13`
+-- Table `TESTDB12`.`table1`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `TESTDB13`.`table13` (
+CREATE TABLE IF NOT EXISTS `TESTDB12`.`table1` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `comb` FLOAT NOT NULL,
+  `comb` INT NOT NULL,
   PRIMARY KEY (`id`, `comb`))
 ENGINE = InnoDB;
 
