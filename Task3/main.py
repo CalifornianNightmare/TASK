@@ -155,7 +155,7 @@ try:
             print(clear_table2(con))
         elif n == '0':
             flag = False
-            print('EXIT!')
+            print('Bye, bye!')
             con.close()
         else:
             print('Неверная команда\n'
